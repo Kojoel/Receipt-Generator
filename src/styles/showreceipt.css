@@ -1,0 +1,130 @@
+.page-spacer {
+    padding: 1rem;
+}
+
+.receipt-container {
+  max-width: fit-content;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+    display: flex;
+    padding: 3rem;
+}
+
+.harp-chorale-logo {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 7rem;
+}
+
+.receipt-no-wrapper-2 {
+    /* display: flex; */
+    margin-right: 12rem;
+}
+
+.receipt-text {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.receipt-no-inner {
+    display: flex;
+    gap: 1rem;
+}
+
+.receipt-no-inner span:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.receipt-no-inner span:last-of-type {
+    font-size: 1.2rem;
+}
+
+
+
+.contact-details {
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    
+}
+
+.date span:first-child, .email span:first-child, .mobile span:first-child, .location span:first-child {
+    display: inline-block;
+    width: 5rem;
+}
+
+
+.orange-bar {
+    height: .4rem;
+    width: 100%;
+    background: orange;
+    margin-bottom: 1.5rem;
+}
+
+
+.content {
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+.from, .service-rendered {
+    background: whitesmoke;
+    padding: .8rem 3rem;
+}
+
+.amount-in-words, .last-line {
+    background: transparent;
+    padding: .8rem 3rem;
+}
+
+.from span:first-child, .amount-in-words span:first-child, .service-rendered span:first-child, .last-line span:first-child {
+    display: inline-block;
+    width: 13.5rem;
+    font-weight: 700;
+}
+
+.last-line {
+    display: flex;
+}
+
+.last-line span:nth-child(3) {
+    margin-left: 2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+.last-line span:nth-child(5) {
+    margin-left: 2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.underline {
+    border-bottom: 1px solid black;
+    margin-right: 2.6rem;
+}
+
+
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper button {
+    font-size: 3rem;
+    width: 500px;
+    height: 6rem;
+    border-radius: 99px;
+    cursor: pointer;
+}
