@@ -1,75 +1,101 @@
 .create-receipt-container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    padding-top: 9rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    font-family: "Monstserrat", Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 .title {
-    width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
-    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 form {
-    height: fit-content;
+    width: 100%;
+    max-width: 420px;
     display: flex;
-    gap: .3rem;
     flex-direction: column;
-    padding: 2rem;
-    border: 1px solid black;
-    background: whitesmoke;
-    border-radius: 20px;
+    gap: .3rem;
+    padding: 2rem 2.5rem;
+    border: none;
+    background: #ffffff;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 label {
-    font-family: "Monstserrat", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    color: #333;
 }
 
 input {
+    height: 2.8rem;
     border-radius: 10px;
-    height: 3rem;
-    min-width: 300px;
-    border: 1px solid grey;
-    /* max-width: 40rem; */
-    margin-bottom: .5rem;
+    border: 1px solid #ccc;
     padding: 0 1rem;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease-in-out;
+    background: #fafafa;
 }
 
 select {
-    height: 3rem;
-    max-width: 40rem;
-    margin-bottom: .5rem;
-    border: 1px solid grey;
+    height: 2.8rem;
     border-radius: 10px;
+    border: 1px solid #ccc;
     padding: 0 1rem;
+    font-size: 0.95rem;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease-in-out;
+    background: #fafafa;
 }
 
-input:focus, select:focus {
-
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ff7e5f;
+    box-shadow: 0 0 0 3px rgba(255, 126, 95, 0.25);
+    background: #fff;
 }
 
 .error {
-    width: 100%;
+    font-size: 0.75rem;
+    color: #e63946;
+    margin-top: 0.0rem;
+    margin-bottom: -0.3rem;
     text-align: right;
-    margin: 0;
-    padding: 0;
-    font-size: .7rem;
-    color: red;
 }
 
 button {
-    height: 4rem;
-    margin-top: .4rem;
-    background: orange;
-    color: black;
+    height: 3.2rem;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
     border: none;
-    border-radius: 15px;
-    font-size: 1.3rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
     font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+button:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
