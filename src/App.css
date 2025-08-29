@@ -1,10 +1,24 @@
-#root, html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+/* Example app-specific container */
+.home-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-body {
-  height: 100vh;
+.create-receipt,
+.create-invoice {
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.create-receipt:hover,
+.create-invoice:hover {
+  transform: scale(1.05);
 }
