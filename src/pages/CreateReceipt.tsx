@@ -77,7 +77,7 @@ const CreateReceipt = () => {
         <input 
           type="text" 
           name="receipt_no"
-          className="receipt-no" 
+          className="" 
           onChange={handleOnChange}
           value={receiptForm.receipt_no}
         />
@@ -87,7 +87,7 @@ const CreateReceipt = () => {
         <input 
           type="text" 
           name="customer_name"
-          className="customer-name"
+          className=""
           onChange={handleOnChange}
           value={receiptForm.customer_name}
         />
@@ -97,7 +97,7 @@ const CreateReceipt = () => {
         <input 
           type="text" 
           name="service_rendered"
-          className="service-rendered" 
+          className="" 
           onChange={handleOnChange}
           value={receiptForm.service_rendered}
         />
@@ -107,7 +107,7 @@ const CreateReceipt = () => {
         <input 
           type="text" 
           name="amount_in_words"
-          className="amount-in-words" 
+          className="" 
           onChange={handleOnChange}
           value={receiptForm.amount_in_words}
         />
