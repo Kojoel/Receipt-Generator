@@ -1,0 +1,50 @@
+.title {
+    position: absolute;
+    top: 3rem;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    place-content: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.create-receipt, .create-invoice {
+    height: 10rem;
+    width: fit-content;
+    border-radius: 8px;
+    background: white;
+    display: grid;
+    place-content: center;
+    padding: 0 2rem;
+}
+
+.create-receipt span {
+    display: inline-block;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: inherit;
+}
+
+.create-invoice span {
+    display: inline-block;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: inherit;
+}
+
+
+@media screen and (max-width: 550px) {
+    .home-container {
+        flex-direction: column;
+    }
+}
